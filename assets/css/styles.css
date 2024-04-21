@@ -3,7 +3,7 @@
 }
 
 :root {
-    --primary-color: #0f1b4c; 
+    --primary-color: #0f1b4c;
 }
 
 html {
@@ -25,12 +25,12 @@ body {
 .btn {
     display: inline-block;
     color: #fff;
-    min-width: 130px;
+    min-width: 170px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
     border-radius: 12px;
-    padding: 15px 37px;
+    padding: 19px 37px;
     background: var(--primary-color);
 }
 
@@ -46,15 +46,13 @@ a {
 .header {
     background: #e6f0ff;
     height: 100vh;
+    position: relative;
 }
 
 .navbar {
     padding-top: 38px;
     display: flex;
     align-items: center;
-}
-
-.navbar img {
 }
 
 .navbar ul {
@@ -93,4 +91,47 @@ a {
     min-width: 80px;
     border-radius: 8px;
     margin-left: 18px;
+}
+
+.hero {
+    display: flex;
+    margin-top: 13rem;
+}
+
+.hero .info {
+    width: 49%;
+}
+
+.hero .sub-title {
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.018rem;
+}
+
+.hero .title {
+    margin-top: 0.8rem;
+    color: #000336;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.18; /* 118.75% */
+}
+
+.hero .desc {
+    margin-top: 3rem;
+    color: #5a6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77; /* 177.778% */
+}
+
+.hero .btn {
+    margin-top: 4rem;
+}
+
+.hero-img {
+    position: absolute;
+    right: calc((100vw - 1140px) / 2 - 65px);
+    bottom: 0;
 }

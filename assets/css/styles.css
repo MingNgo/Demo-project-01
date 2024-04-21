@@ -123,7 +123,7 @@ a {
     color: #5a6473;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.77; 
+    line-height: 1.77;
 }
 
 .hero .btn {
@@ -134,4 +134,47 @@ a {
     position: absolute;
     right: calc((100vw - 1140px) / 2 - 65px);
     bottom: 0;
+}
+
+/* client */
+
+.client {
+    margin-top: 79px;
+}
+
+.client .content {
+    padding-top: 43px;
+}
+
+.client .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client .desc {
+    color: #7d8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+}
+
+.client .row-desc {
+    margin-top: 23px;
+}
+
+.client .img-trademark {
+    margin-top: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client .img-trademark a {
+    padding: 31px 41px 23px;
+    border-radius: 12px;
+}
+
+.client .img-trademark a:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

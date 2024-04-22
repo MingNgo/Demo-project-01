@@ -70,6 +70,7 @@ a {
 
 .navbar ul li a:hover {
     text-decoration: underline;
+    
 }
 
 .navbar .actions {
@@ -82,9 +83,6 @@ a {
     font-weight: 500;
 }
 
-.navbar .action-link:hover {
-    text-decoration: underline;
-}
 
 .navbar .action-btn {
     padding: 13px 23px;
@@ -143,7 +141,7 @@ a {
 }
 
 .client .content {
-    padding-top: 43px;
+    padding: 43px 0; 
 }
 
 .client .row {
@@ -177,4 +175,97 @@ a {
 
 .client .img-trademark a:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* guides */
+.guides {
+    margin-top: 40px;
+}
+
+.guides .content {
+    padding: 79px 0;
+}
+
+.guides .sub-title {
+    position: relative;
+    text-align: center;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.guides .sub-title::before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+    transform: translateX(-50%);
+}
+
+.guides .desc {
+    color: #5a6473;
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.list-guides {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.item-guides {
+    text-align: center;
+    margin: 0 70px 0;
+}
+
+.item-guides .title {
+    margin-top: 26px;
+    color: #3b3c45;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; /* 110% */
+}
+
+.item-guides .link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.item-guides .link span {
+    color: #0689ff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.item-guides .link .arrow-right {
+    padding-left: 5px;
+}
+
+.guides .btn-action {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* demo */
+@media screen and (max-width: 991px) {
+    .client .img-trademark {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

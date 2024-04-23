@@ -16,10 +16,18 @@ body {
 }
 
 /* Common */
+
 .content {
     width: 1140px;
     max-width: calc(100% - 40px);
     margin: 0 auto;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .btn {
@@ -139,7 +147,7 @@ a {
 }
 
 .client .content {
-    padding: 43px 0;
+    padding: 43px 0 41px;
 }
 
 .client .row {
@@ -323,10 +331,10 @@ a {
 }
 
 .featured .item {
+    flex: 1;
     border-radius: 12px;
     background: #fff;
     box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
-
 }
 
 .featured .item .thumb {
@@ -341,11 +349,12 @@ a {
     padding: 17px 20px 23px;
 }
 
-.featured .body .title {
+.featured .body .title a {
     color: #000339;
     font-size: 2rem;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
+    word-break: break-all;
 }
 
 .featured .body .desc {
@@ -353,6 +362,7 @@ a {
     color: #a3a6ab;
     font-size: 1.4rem;
     font-weight: 500;
+    word-break: break-all;
 }
 
 .featured .body .info {
@@ -376,6 +386,207 @@ a {
     font-weight: 500;
     line-height: 1;
 }
+
+/* stats */
+
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+
+.stats .content {
+    width: 1017px;
+}
+
+.stats .row {
+    display: flex;
+}
+
+.stats .img-block,
+.stats .info {
+    width: 50%;
+}
+
+.stats .img-block .image {
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.stats .img-block {
+    position: relative;
+}
+
+.stats .user-stats {
+    border-radius: 0px 0px 12px 12px;
+    background: #fff;
+    box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 239px;
+    padding: 45px 22px 40px;
+}
+
+.stats .user-stats .value {
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    letter-spacing: 0.026rem;
+}
+
+.stats .user-stats .trend-arrow-up {
+    margin-left: auto;
+}
+
+.stats .user-stats .desc {
+    margin-top: 8px;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem; /* 150% */
+}
+
+.stats .user-stats .separate {
+    margin-top: 25px;
+    height: 1px;
+    background: #e9e9e9;
+}
+
+.stats .user-stats .avatar-block {
+    margin-top: 26px;
+    gap: 14px 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stats .avatar-block .avt-ground {
+    display: flex;
+}
+
+.stats .avt-ground .avt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.7261rem;
+    font-weight: 450;
+    letter-spacing: -0.0145rem;
+    background: #fff;
+}
+
+.stats .info {
+    margin-top: 79px;
+    margin-left: 165px;
+    width: 309px;
+}
+
+.stats .info .sub-title {
+    position: relative;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.29; /* 128.571% */
+}
+
+.stats .info .sub-title::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 4px;
+    border-radius: 1.2rem;
+    background: #000339;
+}
+
+.stats .info .desc {
+    margin-top: 20px;
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.stats .row-qty {
+    padding: 0 22px;
+    margin-top: 110px;
+    justify-content: space-between;
+}
+
+.stats .qty {
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+
+.stats .qty-desc {
+    margin-top: 22px;
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Subscribe */
+.subscribe {
+    margin-top: 90px;
+}
+
+.subscribe .body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    border-radius: 20px;
+    background: #063183;
+}
+
+.subscribe .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
+
+.subscribe .body .info {
+    width: 671px;
+    padding: 0 70px 0 80px;
+}
+
+.subscribe .info .sub-title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.5; /* 100% */
+}
+
+.subscribe .info .desc {
+    color: #fff;
+    font-size: 1.6rem;
+    opacity: 0.75;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.subscribe .info .btn {
+    margin-top: 20px;
+    background: #fff;
+    color: #002366;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
 /* demo */
 @media screen and (max-width: 991px) {
     .client .img-trademark {

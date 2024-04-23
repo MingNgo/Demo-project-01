@@ -136,7 +136,7 @@ a {
 
 .hero-img {
     position: absolute;
-    right: calc((100vw - 1140px) / 2 - 65px);
+    right: calc((100vw - 1140px) / 2 - 100px);
     bottom: 0;
 }
 
@@ -655,6 +655,7 @@ a {
 .footer .copyright {
     color: #c2c2c2;
     font-size: 1.4rem;
+
     font-weight: 400;
 }
 

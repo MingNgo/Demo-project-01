@@ -168,14 +168,17 @@ a {
 }
 
 .client .img-trademark {
-    margin-top: 109px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .client .img-trademark a {
-    padding: 31px 41px 23px;
+    display: flex;
+    align-items: center;
+    padding: 0 41px;
+    height: 91px;
     border-radius: 12px;
 }
 

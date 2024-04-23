@@ -68,6 +68,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .navbar {
@@ -110,11 +111,6 @@ a {
     min-width: 80px;
     border-radius: 8px;
     margin-left: 18px;
-}
-
-.hero {
-    display: flex;
-    margin-top: 130px;
 }
 
 .hero .info {

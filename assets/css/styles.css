@@ -587,6 +587,77 @@ a {
     font-weight: 500;
 }
 
+/* Footer */
+
+.footer {
+    margin-top: 55px;
+    padding: 50px 0 58px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .row-top {
+    gap: 185px;
+}
+
+.footer .list,
+.footer .desc {
+    margin-top: 40px;
+}
+
+.footer .item {
+    white-space: nowrap;
+    margin-top: 18px;
+}
+
+.footer .item a,
+.footer .desc {
+    color: #7a7a7e;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.footer .heading {
+    color: #1c1c1d;
+    font-family: Lato;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer .social {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.footer .social .image {
+    width: 28px;
+    height: 28px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.footer .social .image img {
+    padding: 9px;
+}
+
+.footer .row-bot {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 81px;
+}
+
+.footer .copyright {
+    color: #c2c2c2;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
 /* demo */
 @media screen and (max-width: 991px) {
     .client .img-trademark {
